@@ -13,21 +13,6 @@
     src: url(fonts/ubuntu/Ubuntu-Regular.ttf);
 }
 
-@font-face {
-    font-family: ubuntu_bold;
-    src: url(fonts/ubuntu/Ubuntu-Bold.ttf);
-}
-
-@font-face {
-    font-family: ubuntu_light;
-    src: url(fonts/ubuntu/Ubuntu-Light.ttf);
-}
-
-@font-face {
-    font-family: ubuntu-medium;
-    src: url(fonts/ubuntu/Ubuntu-Medium.ttf);
-}
-
 :root {
     --main-bg-colour: #00203D;;
     --white-colour: #FFFFFF;
@@ -55,13 +40,9 @@ body {
     overflow: hidden;
 }
 
-.wrapper {
-    max-width: 1440px;
-}
-
-.landing_section {
-    max-height: 100vh;
-    height: 100vh;
+p {
+    font-family: ubuntu;
+    color: var(--grey-colour);
 }
 
 .logo {
@@ -81,43 +62,35 @@ body {
     animation: glow 1s ease-in-out infinite alternate;
 }
 
-@keyframes glow {
-    from {
-      text-shadow: 0 0 3px var(--accent-clour), 0 0 5px var(--accent-colour);
-    }
-    
-    to {
-      text-shadow: 0 0 3px var(--white-colour), 0 0 5px var(--accent-colour);
-    }
-  }
-
 .orbit {
     font-family: orbitron;
     font-size: 140%;
     color: var(--grey-colour);
 }
 
-p {
-    font-family: ubuntu;
-    color: var(--grey-colour);
+.wrapper {
+    max-width: 1440px;
+}
+
+.landing_section {
+    max-height: 100vh;
+    height: 100vh;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .textblock {
-    width: 54%;
     background-color: var(--white-colour);
 }
 
 .text {
-    width: 70%;
+    width: 90%;
 }
 
 .aboutMeTitle {
     color:var(--accent-colour);
-    text-transform: uppercase;
-    text-orientation: upright;
-    text-align: start;
-    writing-mode: vertical-lr;
-    margin:0 auto;
 }
 
 .aboutMeTitle::after {
@@ -127,7 +100,22 @@ p {
     left: 0;
     top: 0;
     overflow: hidden;
+}
 
+.projectSummary {
+    max-width: 40%;
+}
+
+.projectCards>img {
+    width: 90%;
+    border-radius: 5px;
+}
+
+.line {
+    width: 95%;
+    height: 1px;
+    background-color: var(--white-colour);
+    box-shadow: 0 0 3px 3px var(--grey-colour);   
 }
 
 .menu {
@@ -148,7 +136,6 @@ p {
 }
 
 /* custom cursor*/
-
 #cursor {
     position: fixed;
     opacity: 1;
@@ -160,7 +147,25 @@ p {
     background-color: white;
     transition: transform 350ms ease;
     transform: translate(-50%, -50%) scale(.3);
-  }
+}
+
+/* Glowing logo .mental */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 3px var(--accent-clour), 0 0 5px var(--accent-colour);
+    }
+
+    to {
+        text-shadow: 0 0 3px var(--white-colour), 0 0 5px var(--accent-colour);
+    }
+}
+
+/* hide cursor custom cursor on mobile devices */
+@media screen and (max-width: 1365px) {
+    #cursor {
+        opacity: 0;
+    }
+}
 
 @media screen and (max-width: 450px) {   
     .mental {
@@ -172,9 +177,36 @@ p {
     }
 }
 
-@media screen and (max-width: 1365px) {
-    #cursor {
-        opacity: 0;
+@media screen and (max-width: 767px) {
+    .projectSummary {
+        max-width: 100%;
+        width: 100%;
     }
 }
 
+@media screen and (min-width: 768px){
+    .textblock {
+        width: 60%;
+    }
+
+    .aboutMeTitle {
+        text-transform: uppercase;
+        text-orientation: upright;
+        text-align: start;
+        writing-mode: vertical-lr;
+        margin:0 auto;
+    }
+}
+
+@media screen and (min-width:1366px){
+    .perspectiveParent {
+        -webkit-perspective: 816px;
+        perspective: 816px;
+    }
+    
+    .projectsShelf {
+        position: relative;
+        -webkit-transform: rotateX(-360deg) rotateY(-22deg);
+        transform: rotateX(-360deg) rotateY(-22deg);
+    }
+}

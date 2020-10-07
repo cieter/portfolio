@@ -28,7 +28,7 @@
             </div>
         </div>
     </div>
-        <div class="aboutMe_section d-flex flex-column-reverse flex-sm-row">
+        <div class="aboutMe_section d-flex flex-column-reverse flex-md-row">
             <div class="textblock">
                 <div class="text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime non culpa commodi dolores quidem? Dolore adipisci quam sapiente incidunt, modi officia dolorem quae, amet consequatur corrupti omnis magnam est nisi.</p>
@@ -42,11 +42,32 @@
             </div>
         </div>
     <div class="wrapper container-fluid">
-        <div class="projects orbit">
-            <h2>Projects</h2>
-            <a href="files/projectx.pdf"><p>project x</p></a>
-            <a href="files/proftaak_verslag_(grof).pdf"><p>proftaak</p></a>
-            <a href="files/Portfolio.pdf"><p>portfolio</p></a>
+        <div class="projects mt-5">
+            <h2 class="orbit">Projects</h2>
+            <div class="projectSection d-flex flex-column-reverse flex-md-row">
+                <div class="projectSummary">
+                    <h2 id="projectTitle" class="orbit mt-5"></h2>
+                    <p id="projectText">In deze sectie zie je mijn projecten. Als je rechts over 1 van de hovert zie je een korte samenvatting. Als je dan op Meer info klikt ga je naar het project verslag</p>
+                </div>
+                <div class="perspectiveParent mt-5">
+                    <div class="projectsShelf">
+                        <div class="projectsDrawer d-flex flex-column flex-sm-row">
+                            <a href="files/projectx.pdf" class="projectCards" onmouseout="mouseOut()">
+                                <img src="files/images/projectx.png" alt="">
+                                <p>project x</p>
+                            </a>
+                            <a href="files/proftaak_verslag_(grof).pdf" class="projectCards" onmouseout="mouseOut()">
+                                <img src="files/images/proftaak.png" alt="">
+                                <p>proftaak</p>
+                            </a>
+                            <!-- <a href="files/Portfolio.pdf">
+                                <p>portfolio</p>
+                            </a> -->
+                        </div>
+                        <p class="line"></p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="menu">
             <div class="left_menu_btn">
