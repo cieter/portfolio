@@ -1,0 +1,180 @@
+@font-face {
+    font-family: mentalist;
+    src: url(fonts/mentalist/Mentalist.woff2);
+}
+
+@font-face {
+    font-family: orbitron;
+    src: url(fonts/orbitron/Orbitron-VariableFont_wght.woff2);
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url(fonts/ubuntu/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: ubuntu_bold;
+    src: url(fonts/ubuntu/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+    font-family: ubuntu_light;
+    src: url(fonts/ubuntu/Ubuntu-Light.ttf);
+}
+
+@font-face {
+    font-family: ubuntu-medium;
+    src: url(fonts/ubuntu/Ubuntu-Medium.ttf);
+}
+
+:root {
+    --main-bg-colour: #00203D;;
+    --white-colour: #FFFFFF;
+    --grey-colour: #BBBBBB;
+    --accent-colour: #2ec4ff;
+}
+
+* {
+    cursor: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body {
+    background-color: var(--main-bg-colour);
+    overflow: hidden;
+}
+
+.wrapper {
+    max-width: 1440px;
+}
+
+.landing_section {
+    max-height: 100vh;
+    height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.mental {
+    font-family: mentalist;
+    font-size: 200%;
+    color: var(--grey-colour);
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 3px var(--accent-clour), 0 0 5px var(--accent-colour);
+    }
+    
+    to {
+      text-shadow: 0 0 3px var(--white-colour), 0 0 5px var(--accent-colour);
+    }
+  }
+
+.orbit {
+    font-family: orbitron;
+    font-size: 140%;
+    color: var(--grey-colour);
+}
+
+p {
+    font-family: ubuntu;
+    color: var(--grey-colour);
+}
+
+.textblock {
+    width: 54%;
+    background-color: var(--white-colour);
+}
+
+.text {
+    width: 70%;
+}
+
+.aboutMeTitle {
+    color:var(--accent-colour);
+    text-transform: uppercase;
+    text-orientation: upright;
+    text-align: start;
+    writing-mode: vertical-lr;
+    margin:0 auto;
+}
+
+.aboutMeTitle::after {
+    content: attr(data-split);
+    color: var(--white-colour);
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+
+}
+
+.menu {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    text-align: center;
+}
+
+#scrollBar {
+    height: 2px;
+    border-radius: 25%;
+    background-color: var(--grey-colour);
+    width: 0%;
+}
+
+/* custom cursor*/
+
+#cursor {
+    position: fixed;
+    opacity: 1;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 350ms ease;
+    transform: translate(-50%, -50%) scale(.3);
+  }
+
+@media screen and (max-width: 450px) {   
+    .mental {
+        font-size: 140%;
+    }
+
+    .orbit {
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    #cursor {
+        opacity: 0;
+    }
+}
+
