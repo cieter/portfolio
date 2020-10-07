@@ -149,6 +149,17 @@ a:hover {
     transform: translate(-50%, -50%) scale(.3);
 }
 
+
+/* project x page */
+.video {
+    display: block;
+    margin:50px auto;
+}
+
+
+
+
+
 /* Glowing logo .mental */
 @keyframes glow {
     from {
