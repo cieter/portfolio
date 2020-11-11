@@ -166,7 +166,10 @@ a:hover {
     width: 70%;
 }
 
-
+/* carousel text*/
+.carouselText {
+    color: #ffffff;
+}
 
 
 /* Glowing logo .mental */

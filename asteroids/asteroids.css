@@ -1,0 +1,34 @@
+@font-face {
+    font-family: orbitron;
+    src: url(fonts/orbitron/Orbitron-VariableFont_wght.woff2);
+}
+
+* {
+	margin: 0;
+}
+
+canvas {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #666666;
+}
+
+#instructions {
+	color: #FFF;
+	font-family: "orbitron", monospace;
+	margin: 10px 10px 0;
+	padding: 8px;
+    background: rgba(0, 32, 61, 0.5);
+    right: 10px;
+	position: absolute;
+	z-index: 1;
+}
+
+#instructions h1 {
+	font-size: 26px;
+}
+
+#instructions p {
+	font-size: 15px;
+}
