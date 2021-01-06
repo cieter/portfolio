@@ -11,6 +11,15 @@ let projectTitle = document.getElementById('projectTitle');
 let projectText = document.getElementById('projectText');
 let projectCard = document.querySelectorAll('.projectCards');
 let dropdown = document.getElementById('dropdown');
+let timer;
+
+if(document.title == "Portfolio")
+  {
+    timer = 3000;
+  } else {
+    timer = 0;
+  }
+  console.log(timer);
 
 // set loeding screen time
 setTimeout(function(){
@@ -22,7 +31,7 @@ setTimeout(function(){
         cursor.style.top = y+'px';
         cursor.style.left = x+'px';
       });
-}, 3000);  
+}, timer);  
 
 // for(var i = 0; i < projectCard.length; i++){
 //   projectCard[i].addEventListener('mouseover', function(){

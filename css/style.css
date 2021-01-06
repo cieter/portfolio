@@ -107,11 +107,6 @@ a:hover {
     padding-right: 2%;
 }
 
-.projectCards {
-    width: 50%;
-    transition-timing-function: ease;
-}
-
 .projectCards>img {
     width: 90%;
     border-radius: 5px;
@@ -251,6 +246,11 @@ a:hover {
     .perspectiveParent {
         -webkit-perspective: 816px;
         perspective: 816px;
+    }
+
+    .projectCards {
+        width: 50%;
+        transition-timing-function: ease;
     }
     
     .projectsShelf {

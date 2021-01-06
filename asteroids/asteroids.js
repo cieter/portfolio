@@ -819,7 +819,7 @@ const renderScanlines = () =>
 	context.globalAlpha = 1;
 }
 
-const generateShot = () =>
+function generateShot()
 {
 	let b = bulletPool.getElement();
 

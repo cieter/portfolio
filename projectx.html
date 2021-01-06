@@ -9,7 +9,7 @@
     <title>Project X</title>
 </head>
 <body id="body">
-    <div id="wrapper_loader">
+    <!-- <div id="wrapper_loader">
         <div id="loader">
             <div class="box">
                 <span></span>
@@ -19,13 +19,14 @@
         </div>
         <div class="loader_panel left_panel"></div>
         <div class="loader_panel right_panel"></div>
-    </div>
+    </div> -->
     <div class="wrapper container-fluid">
         <h1 class="mental" style="margin-top: 20px;">Project X</h1>
-        <h2 class="orbit">AR APPLICATION <span id="dropdown" class="dropbtn" onclick="toggleDropdown()">&#x25BC<div id="myDropdown" class="dropdown-content">
+        <h2 class="orbit">AR APPLICATION <span id="dropdown" class="dropbtn" onmouseover="cursorOver()" onmouseout="cursorOut()" onclick="toggleDropdown()">&#x25BC<div id="myDropdown" class="dropdown-content">
             <a href="index.html"><h2 class="orbit">Home</h2></a>
             <a href="mcshower.html"><h2 class="orbit">McShower</h2></a>
             <a href="freetheflurry.html"><h2 class="orbit">#freeTheFlurry</h2></a>
+            <a href="leeruitkomsten.html"><h2 class="orbit">Leeruitkomsten</h2></a>
           </div>
       </span></h2>
         <p>// leeruitkomsten die ik aan wil tonen zijn:</p>
@@ -53,9 +54,15 @@
         <div class="iframeContainer">
             <iframe src="files/videos/arVideo.mp4" frameborder="0" allow="fullscreen" allowfullscreen="" class="is-loaded video"></iframe>
         </div>
+
+        <h2 class="orbit">AR app V2.0</h2>
+        <div>
+            <img src="files/videos/gifs/ar_appv2.0.gif" alt="ar app gif" class="d-block mx-auto rounded img-fluid">
+        </div>
+
         <p>De AR app repository is te vinden op <a href="https://github.com/cieter/AR_application" target="blank">mijn github</a> pagina.</p>
-        <a href="files/projectx.pdf" target="blank">
-            <p>Verslag</p>
+        <a href="https://i427021.hera.fhict.nl" target="blank" onmouseover="cursorOver()" onmouseout="cursorOut()">
+            <button type:="button" class="btn btn-light">DE APP &#9205</button>
         </a>
     </div>
 
