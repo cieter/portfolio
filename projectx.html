@@ -23,44 +23,60 @@
     <div class="wrapper container-fluid">
         <h1 class="mental" style="margin-top: 20px;">Project X</h1>
         <h2 class="orbit">AR APPLICATION <span id="dropdown" class="dropbtn" onmouseover="cursorOver()" onmouseout="cursorOut()" onclick="toggleDropdown()">&#x25BC<div id="myDropdown" class="dropdown-content">
-            <a href="index.html"><h2 class="orbit">Home</h2></a>
-            <a href="mcshower.html"><h2 class="orbit">McShower</h2></a>
-            <a href="freetheflurry.html"><h2 class="orbit">#freeTheFlurry</h2></a>
-            <a href="leeruitkomsten.html"><h2 class="orbit">Leeruitkomsten</h2></a>
+            <a href="index.html"><p class="orbit">Home</p></a>
+            <a href="mcshower.html"><p class="orbit">McShower</p></a>
+            <a href="freetheflurry.html"><p class="orbit">#freeTheFlurry</p></a>
+            <a href="leeruitkomsten.html"><p class="orbit">Leeruitkomsten</p></a>
+            <a href="reflectie.html"><p class="orbit">Reflectie</p></a>
           </div>
       </span></h2>
-        <p>// leeruitkomsten die ik aan wil tonen zijn:</p>
+        <!-- <p>// leeruitkomsten die ik aan wil tonen zijn:</p>
         <ul>
             <li><p>Design</p></li>
             <li><p>Development</p></li>
             <li><p>Research</p></li>
-        </ul>
-        <div class="iframeContainer">
-            <iframe src="https://player.vimeo.com/video/429553253?color=ffffff&amp;muted=1&amp;autoplay=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" loading="lazy" class="is-loaded video"></iframe>
-        </div>
-        <h2 class="orbit">Inspiratie 1</h2>
-        <p>Deze video deed mij denken aan de series: Zoo, The Walking Dead en The 100. Deze "postapocalyptische" stijl trekt mij erg aan. Als je meer wilt lezen over waarom ik dit als inspiratie born pak <a href="files/projectx.pdf" target="blank">Klik dan hier.</a></p>
-        <p></p>
+        </ul> -->
+        <div class="inspiratie_section background_focus">
+            <h2 class="orbit"><b>Inspiratie/Onderzoek</b></h2>
+            <p class="subsection"><b>App inhoud</b></p>
+            
+            <div class="iframeContainer">
+                <iframe src="https://player.vimeo.com/video/429553253?color=ffffff&amp;muted=1&amp;autoplay=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" loading="lazy" class="is-loaded video"></iframe>
+            </div>
+            <h2 class="orbit">Inspiratie 1</h2>
+            <p>Deze video deed mij denken aan de series: Zoo, The Walking Dead en The 100. Deze "postapocalyptische" stijl trekt mij erg aan. Als je meer wilt lezen over waarom ik dit als inspiratie born pak <a href="files/projectx.pdf" target="blank" onmouseover="cursorOver()" onmouseout="cursorOut()">Klik dan hier.</a></p>
+            <p></p>
 
-        <div class="iframeContainer">
-            <iframe src="https://player.vimeo.com/video/429550794?color=ffffff&amp;muted=1&amp;autoplay=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" allow="fullscreen" allowfullscreen="" lodaing="lazy" class="is-loaded video"></iframe>
-        </div>
-        <h2 class="orbit">Inspiratie 2</h2>
-        <p>Deze animaties vind ik heel gaaf! Al helemaal omdat ze rekening houden met de muren en andere begrenzingen van de echte wereld om zo een zo realistisch mogelijk beeld te scheppen van hoe het eruit zou zien als het er echt zou zijn. In <a href="files/projectx.pdf" target="blank">mijn verslag</a> vind je hier meer over.</p>
-        <p></p>
-
-
-        <h2 class="orbit">AR app V1.0</h2>
-        <div class="iframeContainer">
-            <iframe src="files/videos/arVideo.mp4" frameborder="0" allow="fullscreen" allowfullscreen="" class="is-loaded video"></iframe>
-        </div>
-
-        <h2 class="orbit">AR app V2.0</h2>
-        <div>
-            <img src="files/videos/gifs/ar_appv2.0.gif" alt="ar app gif" class="d-block mx-auto rounded img-fluid">
+            <div class="iframeContainer">
+                <iframe src="https://player.vimeo.com/video/429550794?color=ffffff&amp;muted=1&amp;autoplay=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" allow="fullscreen" allowfullscreen="" lodaing="lazy" class="is-loaded video"></iframe>
+            </div>
+            <h2 class="orbit">Inspiratie 2</h2>
+            <p>Deze animaties vind ik heel gaaf! Al helemaal omdat ze rekening houden met de muren en andere begrenzingen van de echte wereld om zo een zo realistisch mogelijk beeld te scheppen van hoe het eruit zou zien als het er echt zou zijn. In <a href="files/projectx.pdf" target="blank" onmouseover="cursorOver()" onmouseout="cursorOut()">mijn verslag</a> vind je hier meer over.</p>
+            <p></p>
         </div>
 
-        <p>De AR app repository is te vinden op <a href="https://github.com/cieter/AR_application" target="blank">mijn github</a> pagina.</p>
+
+        <div class="development_section background_focus">
+            <h2 class="orbit"><b>Development</b></h2>
+            <p class="subsection"><b>Frameworks</b></p>
+            <p>Ik heb gebruikt gemaakt van de Aframe Library en het Three.js framework voor het eerste prototype. Dit bleek niet te werken zoals ik het werkend wilde hebben. Dus heb ik een andere methode geprobeerd, namelijk: Het babylon.js framework in samenwerking met Three.js en ARcore van android.</p>
+            <p>Babylon.js is van origine een Game engine, maar heeft door ontwikkelt vanaf hun virtual reality afdeling. Daarmee hebben zij het mogelijk gemaakt om augmented reality mogelijk te maken op het web, maar wel in combinatie met de native software om zo de hardware van de devices aan te spreken.</p>
+            <p>Dit staat nu nog wel in de kinderschoenen, vandaar dat er nog weinig voortgang geboekt kan worden met dit  framework. Om dit wel te doen, moet je het framework uitspitten en zelf uit breiden.</p>
+            <p class="subsection"><b>App versies</b></p>
+            <h2 class="orbit">AR app V1.0</h2>
+            <div class="iframeContainer">
+                <iframe src="files/videos/arVideo.mp4" frameborder="0" allow="fullscreen" allowfullscreen="" class="is-loaded video"></iframe>
+            </div>
+            <p>Dit is een eerste versie van een werkend prototype.</p>
+
+            <h2 class="orbit">AR app V2.0</h2>
+            <div>
+                <img src="files/videos/gifs/ar_appv2.0.gif" alt="ar app gif" class="d-block mx-auto rounded img-fluid">
+            </div>
+            Hier is een tweede en daarmee ook definitief prototype.
+        </div>
+
+        <p>De AR app repository is te vinden op <a href="https://github.com/cieter/AR_application" target="blank" onmouseover="cursorOver()" onmouseout="cursorOut()">mijn github</a> pagina.</p>
         <a href="https://i427021.hera.fhict.nl" target="blank" onmouseover="cursorOver()" onmouseout="cursorOut()">
             <button type:="button" class="btn btn-light">DE APP &#9205</button>
         </a>

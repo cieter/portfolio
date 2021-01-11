@@ -14,7 +14,7 @@
 }
 
 :root {
-    --main-bg-colour: #00203D;;
+    --main-bg-colour: #00203D;
     --white-colour: #FFFFFF;
     --grey-colour: #BBBBBB;
     --accent-colour: #2ec4ff;
@@ -81,12 +81,17 @@ a:hover {
     text-decoration: none;
 }
 
-.textblock {
-    background-color: var(--white-colour);
+.background_focus {
+    background-color: var(--main-bg-colour);
+    -moz-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
 }
 
 .text {
     width: 90%;
+    padding: 2%;
 }
 
 .aboutMeTitle {
@@ -187,6 +192,16 @@ a:hover {
     color: #ffffff;
 }
 
+.prototype_btn {
+    margin-top: 2px;
+    border-top: var(--grey-colour) 1px solid;
+    padding-top: 8px;
+}
+
+.subsection {
+    margin: 3% 0 2% 0;    
+}
+
 
 /* Glowing logo .mental */
 @keyframes glow {
@@ -226,11 +241,26 @@ a:hover {
         left: 0;
         width: 100%;
     }
+
+    .picture img {
+        height: 400px;
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (min-width: 768px){
     .textblock {
         width: 54%;
+    }
+
+    .picture {
+        max-width: 40%;
+
+    }
+
+    .picture img {
+        height: 400px
     }
 
     .aboutMeTitle {
@@ -243,6 +273,23 @@ a:hover {
 }
 
 @media screen and (min-width:1366px){
+    .background_focus {
+        margin-top: 4%;
+        margin-bottom: 5%;
+    }
+    
+    .background_focus:hover {
+        background-color: var(--white-colour);
+        -moz-transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+    }
+
+    .projectSummary {
+        margin-top: 280px;
+    }
+
     .perspectiveParent {
         -webkit-perspective: 816px;
         perspective: 816px;
@@ -257,5 +304,9 @@ a:hover {
         position: relative;
         -webkit-transform: rotateX(-360deg) rotateY(-22deg);
         transform: rotateX(-360deg) rotateY(-22deg);
+    }
+
+    .inspiratie_section, .design_section {
+        padding: 10px
     }
 }
