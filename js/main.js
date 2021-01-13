@@ -53,18 +53,28 @@ if (document.title == 'Portfolio'){
     projectTitle.innerHTML = 'ProjectX';
     projectText.innerHTML = 'In dit project moet ik een zelfortret maken. Nee niet zo een van je gezicht. Een zelf protret van je passie en interesses. Daarom ga ik een AR PWA maken, dit is een webapplicatie die digitale elementen over de "echte wereld heen kunnen plakken. Dit gebeurt door middel van augmented reality (AR). Klik op de foto en zie er meer over!!!"';
     this.style.transform = 'translatey(-10px)';
+    this.style.transition = 'all 0.1s ease-in'
   });
 
   projectCard[1].addEventListener('mouseover', function(){
     projectTitle.innerHTML = 'McShower';
     projectText.innerHTML = 'Tijdens dit project hebben we als probleemstelling dat de McFlurry te weinig verkocht wordt. Hiervoor moeten wij ideeën gaan verzinnen waarbij de verkoop meer gestimuleerd wordt. Hiervoor moeten we onderzoek gaan doen naar de doelgroep en de rede achter dat de McFlurry niet zo veel gekocht wordt door mensen. Uit deze onderzoeken komen dan resultaten waar wij, de proftaak leden, dan weer conclusies uit trekken. Klik op de foto en zie wat ik aan deze proftaak heb gedaan!';
     this.style.transform = 'translatey(-10px)';
+    this.style.transition = 'all 0.1s ease-in'
   });
 
   projectCard[2].addEventListener('mouseover', function(){
     projectTitle.innerHTML = '#freeTheFlurry';
     projectText.innerHTML = 'Bij dit project heb ik me vooral gefocus op het design en uiterlijk van het spel. Dit zal dan ook voornamelijk naar voren komen op de pagina van #FreeTheFlurry. Het is een leuk maar casual spel dat door vele gespeeld kan worden aangezien de besturing heel simpel is.';
     this.style.transform = 'translatey(-10px)';
+    this.style.transition = 'all 0.1s ease-in'
+  });
+
+  projectCard[3].addEventListener('mouseover', function(){
+    projectTitle.innerHTML = 'Portfolio';
+    projectText.innerHTML = 'Op deze pagina vind je de weg die is afgelegd naar het portfolio waar je nu op kijkt. Hier zul je zien welke schetsen ik heb gemaakt en hoe ik daarop heb verder gewerkt in Adobe XD. En als laatste zul je nogmaals het reultaat zien waar je nu doorheen klikt.'
+    this.style.transform = 'translatey(-10px)';
+    this.style.transition = 'all 0.1s ease-in'
   });
 
   function mouseOut(){
