@@ -211,6 +211,10 @@ a:hover {
     width: auto;
 }
 
+.result_section>img {
+    margin: 10px;
+}
+
 
 /* Glowing logo .mental */
 @keyframes glow {
