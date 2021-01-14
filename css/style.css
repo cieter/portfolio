@@ -40,6 +40,13 @@ body {
     overflow: hidden;
 }
 
+/* background */
+#playArea {
+    background: rgba(0, 0, 0, 0);
+    z-index: -999;
+    position: fixed;
+}
+
 p {
     font-family: ubuntu;
     color: var(--grey-colour);
@@ -82,7 +89,6 @@ a:hover {
 }
 
 .background_focus {
-    background-color: var(--main-bg-colour);
     -moz-transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
